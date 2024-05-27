@@ -48,20 +48,20 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 
 ```sh
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.vim'
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
 #### Linux (Flatpak)
 
 ```sh
 curl -fLo ~/.var/app/io.neovim.nvim/data/nvim/site/autoload/plug.vim --create-dirs \
-    https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.vim
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 #### Windows (PowerShell)
 
 ```powershell
-iwr -useb https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.vim |`
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
 ```
 
@@ -152,4 +152,54 @@ it looks like this:
 ```
 
 </details>
+
+
+## Vimscript
+
+### Neovim
+
+#### Unix, Linux
+
+```sh
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.config}"/nvim/init.vim \
+       https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.vim'
+```
+
+#### Linux (Flatpak)
+
+```sh
+curl -fLo ~/.var/app/io.neovim.nvim/data/nvim/init.vim  \
+    https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.vim
+```
+
+#### Windows (PowerShell)
+
+```powershell
+iwr -useb https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.vim |`
+    ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim/init.vim" -Force
+```
+
+it looks like this:
+
+```
+~/AppData/Local/nvim
+│
+├── init.vim
+│  
+└── ...
+
+```
+</details>
+
+### Usage
+
+Open Neovim and it will automatically install the plug-ins configured in the init.vim file
+
+
+<img src="https://github.com/congnghe88/Collection-of-plugins-for-Neovim/assets/110919309/f07e7ce7-b4aa-49b1-80e1-46f9a4e7c035">
+
+
+
+
+
 
