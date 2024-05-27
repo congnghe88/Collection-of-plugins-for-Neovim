@@ -1,8 +1,9 @@
-" GistID: b96887c96646762730cacf99a1c4c36d
-"
+
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " README:
 " This configuration file is intended for neovim, but most of it should also
 " work on vim. It works out of the box with nvim-qt or similar gui and with

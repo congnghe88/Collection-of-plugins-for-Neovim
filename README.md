@@ -48,24 +48,25 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 
 ```sh
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+       https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.vim'
 ```
 
 #### Linux (Flatpak)
 
 ```sh
 curl -fLo ~/.var/app/io.neovim.nvim/data/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.vim
 ```
 
 #### Windows (PowerShell)
 
 ```powershell
-iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+iwr -useb https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.vim |`
     ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
 ```
 
 it looks like this:
+
 ```
 ~/AppData/Local/nvim-data
 │
@@ -117,13 +118,13 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.config}"/nvim \
 
 ```sh
 curl -fLo ~/.var/app/io.neovim.nvim/data/nvim \
-    https://github.com/congnghe88/Collection-of-plugins-for-Neovim/tree/main/init.lua'
+    https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.lua'
 ```
 
 #### Windows (PowerShell)
 
 ```powershell
-iwr -useb https://github.com/congnghe88/Collection-of-plugins-for-Neovim/tree/main/init.lua |`
+iwr -useb https://github.com/congnghe88/Collection-of-plugins-for-Neovim/blob/main/init.lua |`
     ni "$(@($env:XDG_DATA_HOME, $env:.config)[$null -eq $env:XDG_DATA_HOME])/nvim/init.lua" -Force
 ```
 
